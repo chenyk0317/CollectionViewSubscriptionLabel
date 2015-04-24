@@ -1,3 +1,3 @@
 # CollectionViewSubscriptionLabel
 CollectionView实现自选标签选择器
-collectionView实现
+![](/image.gif)
