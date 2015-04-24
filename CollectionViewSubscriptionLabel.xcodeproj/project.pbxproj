@@ -14,6 +14,9 @@
 		E150BAC91AEA0DB0007D25B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E150BAC81AEA0DB0007D25B4 /* Images.xcassets */; };
 		E150BACC1AEA0DB0007D25B4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E150BACA1AEA0DB0007D25B4 /* LaunchScreen.xib */; };
 		E150BAD81AEA0DB0007D25B4 /* CollectionViewSubscriptionLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E150BAD71AEA0DB0007D25B4 /* CollectionViewSubscriptionLabelTests.m */; };
+		E150BAE41AEA0DCB007D25B4 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E150BAE31AEA0DCB007D25B4 /* UICollectionViewLeftAlignedLayout.m */; };
+		E150BAE71AEA0E1A007D25B4 /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E150BAE61AEA0E1A007D25B4 /* CollectionHeaderView.m */; };
+		E150BAEA1AEA0E41007D25B4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E150BAE91AEA0E41007D25B4 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		E150BAD11AEA0DB0007D25B4 /* CollectionViewSubscriptionLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewSubscriptionLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E150BAD61AEA0DB0007D25B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E150BAD71AEA0DB0007D25B4 /* CollectionViewSubscriptionLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewSubscriptionLabelTests.m; sourceTree = "<group>"; };
+		E150BAE21AEA0DCB007D25B4 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
+		E150BAE31AEA0DCB007D25B4 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
+		E150BAE51AEA0E1A007D25B4 /* CollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderView.h; sourceTree = "<group>"; };
+		E150BAE61AEA0E1A007D25B4 /* CollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderView.m; sourceTree = "<group>"; };
+		E150BAE81AEA0E41007D25B4 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		E150BAE91AEA0E41007D25B4 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +90,15 @@
 		E150BABA1AEA0DB0007D25B4 /* CollectionViewSubscriptionLabel */ = {
 			isa = PBXGroup;
 			children = (
+				E150BAE11AEA0DCB007D25B4 /* UICollectionViewLeftAlignedLayout */,
 				E150BABF1AEA0DB0007D25B4 /* AppDelegate.h */,
 				E150BAC01AEA0DB0007D25B4 /* AppDelegate.m */,
 				E150BAC21AEA0DB0007D25B4 /* ViewController.h */,
 				E150BAC31AEA0DB0007D25B4 /* ViewController.m */,
+				E150BAE51AEA0E1A007D25B4 /* CollectionHeaderView.h */,
+				E150BAE61AEA0E1A007D25B4 /* CollectionHeaderView.m */,
+				E150BAE81AEA0E41007D25B4 /* CollectionViewCell.h */,
+				E150BAE91AEA0E41007D25B4 /* CollectionViewCell.m */,
 				E150BAC51AEA0DB0007D25B4 /* Main.storyboard */,
 				E150BAC81AEA0DB0007D25B4 /* Images.xcassets */,
 				E150BACA1AEA0DB0007D25B4 /* LaunchScreen.xib */,
@@ -117,6 +131,15 @@
 				E150BAD61AEA0DB0007D25B4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E150BAE11AEA0DCB007D25B4 /* UICollectionViewLeftAlignedLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E150BAE21AEA0DCB007D25B4 /* UICollectionViewLeftAlignedLayout.h */,
+				E150BAE31AEA0DCB007D25B4 /* UICollectionViewLeftAlignedLayout.m */,
+			);
+			path = UICollectionViewLeftAlignedLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E150BAEA1AEA0E41007D25B4 /* CollectionViewCell.m in Sources */,
+				E150BAE41AEA0DCB007D25B4 /* UICollectionViewLeftAlignedLayout.m in Sources */,
 				E150BAC41AEA0DB0007D25B4 /* ViewController.m in Sources */,
 				E150BAC11AEA0DB0007D25B4 /* AppDelegate.m in Sources */,
 				E150BABE1AEA0DB0007D25B4 /* main.m in Sources */,
+				E150BAE71AEA0E1A007D25B4 /* CollectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
